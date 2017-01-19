@@ -1,0 +1,33 @@
+<nav class="nav">
+    <div class="nav-left">
+        <a class="nav-titel-icon">
+            <h1>R</h1>
+            <p>@rainslayerx</p>
+        </a>
+    </div>
+    <div class="nav-center">
+        <a [routerLink]="['/home']" [routerLinkActive]="['is-active']" class="nav-item is-tab">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <p>Home</p>
+        </a>
+        <a [routerLink]="['/aboutme']" [routerLinkActive]="['is-active']" class="nav-item is-tab">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <p>About Me</p>
+        </a>
+        <a [routerLink]="['/experience']" [routerLinkActive]="['is-active']" class="nav-item is-tab">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <p>Experience</p>
+        </a>
+        <a [routerLink]="['/experience']" [routerLinkActive]="['is-active']" class="nav-item is-tab">
+            <i class="fa fa-laptop" aria-hidden="true"></i>
+            <p>Projects</p>
+        </a>
+    </div>
+    <div class="nav-right">
+    </div>
+    <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
