@@ -72,3 +72,20 @@ nav {
         font-size: 0.65em;
     }
 }
+
+.loading-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100%);
+    background-color: RGB(40, 40, 40);
+}
+
+.loading-overlay .loading-enter {
+    animation-name: example 1s;
+}
+
+@keyframes example {
+    from {transform: translateX(-100%)}
+    to {transform: translateX(0)}
+}

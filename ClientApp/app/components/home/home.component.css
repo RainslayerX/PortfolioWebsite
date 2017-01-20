@@ -6,14 +6,10 @@ section {
     background-size: cover;
 }
 
-nav {
-    background-color: RGB(25, 25, 25);
-}
-
 .clip-circle {
-    background: url("~/images/head.jpg") no-repeat;
-    background-size: 270px 265px;
-    background-position: -12px 0px;
+    background: url("~/images/selfie.jpg") no-repeat;
+    background-size: 125% 200%;
+    background-position: -1.75em -8.25em;
     min-height: 250px;
     min-width: 250px;
     height: 250px;
@@ -96,4 +92,8 @@ h2 {
 .full-columns {
     margin-left: -1.5em;
     margin-right: -1.5em;
+}
+
+.spacer-non-touch {
+    padding-right: 4em;
 }

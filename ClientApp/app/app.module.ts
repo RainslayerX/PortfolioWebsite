@@ -4,16 +4,14 @@ import { UniversalModule } from 'angular2-universal';
 import { AppComponent } from './components/app/app.component'
 import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
-import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
-import { CounterComponent } from './components/counter/counter.component';
+import { AboutMeComponent } from './components/aboutme/aboutme.component';
 
 @NgModule({
     bootstrap: [ AppComponent ],
     declarations: [
         AppComponent,
         NavMenuComponent,
-        CounterComponent,
-        FetchDataComponent,
+        AboutMeComponent,
         HomeComponent
     ],
     imports: [
@@ -21,8 +19,7 @@ import { CounterComponent } from './components/counter/counter.component';
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
-            { path: 'counter', component: CounterComponent },
-            { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'aboutme', component: AboutMeComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
