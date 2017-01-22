@@ -47,9 +47,10 @@ nav {
     .nav-item .fa {
         font-size: xx-large;
     }
-    .nav-item.is-tab.is-active {
+    .nav-item.is-tab.isActive {
         border-bottom: 2px solid #00d1b2 !important;
         border-top: 2px solid #00d1b2 !important;
+        color: #00d1b2;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
     }
@@ -81,11 +82,20 @@ nav {
     background-color: RGB(40, 40, 40);
 }
 
-.loading-overlay .loading-enter {
-    animation-name: example 1s;
+.loadingEnter {
+    animation: loadingEnterAnim 0.5s forwards;
 }
 
-@keyframes example {
+@keyframes loadingEnterAnim {
     from {transform: translateX(-100%)}
-    to {transform: translateX(0)}
+    to {transform: translateX(0px)}
+}
+
+.loadingExit {
+    animation: loadingExitAnim 0.5s forwards;
+}
+
+@keyframes loadingExitAnim {
+    from {transform: translateX(0px)}
+    to {transform: translateX(100%)}
 }

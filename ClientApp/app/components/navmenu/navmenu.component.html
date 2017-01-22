@@ -1,4 +1,4 @@
-<div class="loading-overlay" [ngClass]="{'loading-enter':loadEnter, 'loading-exit':loadExit}"></div>
+<div class="loading-overlay" [ngClass]="{'loadingEnter':loadEnter, 'loadingExit':loadExit}"></div>
 
 <nav class="nav">
     <div class="nav-left">
@@ -8,19 +8,19 @@
         </a>
     </div>
     <div class="nav-center">
-        <a [routerLink]="['/home']" [routerLinkActive]="['is-active']" class="nav-item is-tab">
+        <a (click)="navigateAnimated('/home')" [ngClass]="{isActive: (currentPath == '/home')}" class="nav-item is-tab">
             <i class="fa fa-home" aria-hidden="true"></i>
             <p>Home</p>
         </a>
-        <a [routerLink]="['/aboutme']" [routerLinkActive]="['is-active']" class="nav-item is-tab">
+        <a [routerLink]="['/aboutme']" [routerLinkActive]="['isActive']" class="nav-item is-tab">
             <i class="fa fa-user" aria-hidden="true"></i>
             <p>About Me</p>
         </a>
-        <a [routerLink]="['/experience']" [routerLinkActive]="['is-active']" class="nav-item is-tab">
+        <a [routerLink]="['/experience']" [routerLinkActive]="['isActive']" class="nav-item is-tab">
             <i class="fa fa-code" aria-hidden="true"></i>
             <p>Experience</p>
         </a>
-        <a [routerLink]="['/experience']" [routerLinkActive]="['is-active']" class="nav-item is-tab">
+        <a [routerLink]="['/experience']" [routerLinkActive]="['isActive']" class="nav-item is-tab">
             <i class="fa fa-laptop" aria-hidden="true"></i>
             <p>Projects</p>
         </a>
