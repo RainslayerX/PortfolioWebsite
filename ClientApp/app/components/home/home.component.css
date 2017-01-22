@@ -25,22 +25,8 @@ section {
     height: calc(100vh - 3em);
 }
 
-.horizontal {
-    display: flex;
-    flex-direction: row;
-}
-
-.vertical {
-    display: flex;
-    flex-direction: column;
-}
-
 .hero {
     background-color: transparent;
-}
-
-.center-content {
-    justify-content: center;
 }
 
 h1,
@@ -68,25 +54,26 @@ h2 {
     font-size: 1.1rem;
 }
 
-@media (max-width: 767px) {
-    .center-on-mobile {
-        margin-left: auto;
-        margin-right: auto;
-        float: unset;
+.hero-main-content {
+    padding: 3em;
+}
+
+@media (max-width: 766px) {
+    .hero-main-content {
+        padding: 3em;
     }
 }
 
 .bg-black {
     background-color: black;
 }
+
 .bg-dark-1 {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 .bg-dark-2 {
     background-color: rgba(0, 0, 0, 0.75);
-}
-.pad-3 {
-    padding: 3em;
 }
 
 .full-columns {
@@ -96,4 +83,12 @@ h2 {
 
 .spacer-non-touch {
     padding-right: 4em;
+}
+
+@media (max-width: 767px) {
+    .center-on-mobile {
+        margin-left: auto;
+        margin-right: auto;
+        float: unset;
+    }
 }

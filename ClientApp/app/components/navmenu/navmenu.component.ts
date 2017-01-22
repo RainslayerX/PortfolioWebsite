@@ -27,6 +27,6 @@ export class NavMenuComponent {
     navigateAnimated(targetPath) {
         this.loadEnter = true;
         this.currentPath = targetPath;
-        setTimeout(() => this.router.navigate([targetPath]), 500);
+        setTimeout(() => this.router.navigate([targetPath]), 650);
     }
 }

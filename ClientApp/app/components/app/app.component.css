@@ -1,6 +1,6 @@
 @media (max-width: 767px) {
     section {
-        padding-left: 1.5em;
+        padding-left: 1.5em !important;
     }
 }
 
@@ -11,4 +11,19 @@ section {
     padding: 1.5em;
     padding-left: 6.5em;
     overflow: hidden;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
 }

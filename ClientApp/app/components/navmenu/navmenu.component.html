@@ -1,5 +1,9 @@
-<div class="loading-overlay" [ngClass]="{'loadingEnter':loadEnter, 'loadingExit':loadExit}"></div>
-
+<div class="loading-overlay center-content vertical" [ngClass]="{'loadingEnter':loadEnter, 'loadingExit':loadExit}">
+    <div class="has-text-centered">
+        <div class="emoji-face">ʕ·ᴥ·ʔ</div>
+        <div class="subtitle">LOADING!</div>
+    </div>
+</div>
 <nav class="nav">
     <div class="nav-left">
         <a class="nav-titel-icon">
@@ -16,11 +20,11 @@
             <i class="fa fa-user" aria-hidden="true"></i>
             <p>About Me</p>
         </a>
-        <a [routerLink]="['/experience']" [routerLinkActive]="['isActive']" class="nav-item is-tab">
+        <a (click)="navigateAnimated('/experience')" [ngClass]="{isActive: (currentPath == '/experience')}" class="nav-item is-tab">
             <i class="fa fa-code" aria-hidden="true"></i>
             <p>Experience</p>
         </a>
-        <a [routerLink]="['/experience']" [routerLinkActive]="['isActive']" class="nav-item is-tab">
+        <a (click)="navigateAnimated('/projects')" [ngClass]="{isActive: (currentPath == '/projects')}" class="nav-item is-tab">
             <i class="fa fa-laptop" aria-hidden="true"></i>
             <p>Projects</p>
         </a>
