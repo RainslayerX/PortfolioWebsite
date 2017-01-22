@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -26,6 +26,7 @@ export class NavMenuComponent {
 
     navigateAnimated(targetPath) {
         this.loadEnter = true;
-        setTimeout(() => this.router.navigate(targetPath), 500);
+        this.currentPath = targetPath;
+        setTimeout(() => this.router.navigate([targetPath]), 500);
     }
 }

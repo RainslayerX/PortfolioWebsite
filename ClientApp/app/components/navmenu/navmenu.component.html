@@ -12,7 +12,7 @@
             <i class="fa fa-home" aria-hidden="true"></i>
             <p>Home</p>
         </a>
-        <a [routerLink]="['/aboutme']" [routerLinkActive]="['isActive']" class="nav-item is-tab">
+        <a (click)="navigateAnimated('/aboutme')" [ngClass]="{isActive: (currentPath == '/aboutme')}" class="nav-item is-tab">
             <i class="fa fa-user" aria-hidden="true"></i>
             <p>About Me</p>
         </a>
