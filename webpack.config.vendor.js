@@ -68,7 +68,7 @@ var clientBundleConfig = merge(sharedConfig, {
     ])
 });
 
-var serverBundleConfig = merge(sharedConfig, {
+/*var serverBundleConfig = merge(sharedConfig, {
     target: 'node',
     resolve: { packageMains: ['main'] },
     output: {
@@ -85,6 +85,6 @@ var serverBundleConfig = merge(sharedConfig, {
             name: '[name]_[hash]'
         })
     ]
-});
+});*/
 
-module.exports = [clientBundleConfig, serverBundleConfig];
+module.exports = [clientBundleConfig/*, serverBundleConfig*/];

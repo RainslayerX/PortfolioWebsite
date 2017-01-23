@@ -12,13 +12,11 @@ textarea {
     height: 100vh;
     background-color: RGB(40, 40, 40);
     color: white;
-    z-index: 5;
+    z-index: 100;
     display: flex;
     top: 0;
     left: 0;
     justify-content: center;
-    transition: clip 0.5s;
-    clip: rect(0px, 100vw, 100vh, 0px);
 }
 
 .loading .emoji-face {
@@ -31,11 +29,17 @@ textarea {
     margin: 0;
 }
 
-
-/* .loading screen is visible when app is not bootstraped yet, .my-app is empty */
+@keyframes loading-clip-out {
+    from {
+        clip: rect(0px, 100vw, 100vh, 0px);
+    }
+    to {
+        clip: rect(0px, 100vw, 100vh, 100vw);
+    }
+}
 
 app:not(:empty)+.loading {
-    clip: rect(0px, 100vw, 100vh, 100vw);
+    animation: loading-clip-out 0.5s 0.1s forwards;
 }
 
 .loading-content {
