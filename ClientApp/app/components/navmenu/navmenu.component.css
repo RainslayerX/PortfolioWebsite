@@ -3,6 +3,7 @@ nav {
     color: #f5f5f5;
     transition: background-color 0.25s;
     max-height: 3.5em;
+    z-index: 5;
 }
 
 @media (min-width: 767px) {
@@ -83,6 +84,7 @@ nav {
     clip: rect(0px, 0px, 0px, 100vh);
     background-color: RGB(40, 40, 40);
     color: white;
+    z-index: 5;
 }
 
 .loading-overlay .emoji-face {

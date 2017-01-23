@@ -48,7 +48,7 @@ var clientBundleConfig = merge(sharedConfig, {
 });
 
 // Configuration for server-side (prerendering) bundle suitable for running in Node
-var serverBundleConfig = merge(sharedConfig, {
+/*var serverBundleConfig = merge(sharedConfig, {
     resolve: { packageMains: ['main'] },
     entry: { 'main-server': './ClientApp/boot-server.ts' },
     plugins: [
@@ -65,6 +65,6 @@ var serverBundleConfig = merge(sharedConfig, {
     },
     target: 'node',
     devtool: 'inline-source-map'
-});
+});*/
 
-module.exports = [clientBundleConfig, serverBundleConfig];
+module.exports = [clientBundleConfig/*, serverBundleConfig*/];
