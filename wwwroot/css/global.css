@@ -43,10 +43,10 @@ app:not(:empty)+.loading {
     justify-content: center;
     display: flex;
     text-align: center;
-    animation: fadeIn 0.5s forwards;
+    animation: loading-fade-in 0.5s forwards;
 }
 
-@keyframes fadeIn {
+@keyframes loading-fade-in {
     from {
         opacity: 0;
         transform: scale(0.7);
