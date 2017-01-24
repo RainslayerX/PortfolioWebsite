@@ -8,6 +8,10 @@ textarea {
     line-height: 1.4;
 }
 
+html {
+    min-width: 0!important;
+}
+
 .loading {
     position: absolute;
     width: 100vw;

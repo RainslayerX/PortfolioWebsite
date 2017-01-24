@@ -4,6 +4,7 @@ nav {
     transition: background-color 0.25s;
     max-height: 3.5em;
     z-index: 5;
+    overflow: auto;
 }
 
 @media (min-width: 767px) {
