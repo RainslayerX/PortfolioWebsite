@@ -43,9 +43,11 @@ section {
     animation: fadeIn 0.5s 0.1s both;
 }
 .transition-zoom-delay-3 {
-    animation: fadeIn 0.5s 0.2s both;
+    animation: fadeIn 0.5s 0.175s both;
 }
-
+.transition-zoom-delay-4 {
+    animation: fadeIn 0.5s 0.275s both;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -72,4 +74,12 @@ section {
 .full-columns {
     margin-left: -1.5em;
     margin-right: -1.5em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.content, .content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .title, .subtitle {
+    color: #f5f5f5 !important;
 }

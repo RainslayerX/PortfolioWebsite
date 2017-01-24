@@ -5,3 +5,13 @@ section {
     -o-background-size: cover;
     background-size: cover;
 }
+
+.column {
+    padding: 2em;
+}
+
+@media (max-width: 767px) {
+    .column {
+        padding: 1em;
+    }
+}
